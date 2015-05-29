@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= json.project.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <%= t.include("partials/_adHead.html") %>
+  </head>
+  <body ng-app="top-companies">
+    <div ng-controller="CompanyController" ng-cloak>
+      <table>
+        <tr ng-repeat="company in companies">
+          <td>{{company.rank}}</td>
+          <td>{{company.company}}<td>
+          <td>{{company.industry}}<td>
+          <td>{{company.roic}}<td>
+          <td>{{company.marketcap}}<td>
+          <td>{{company.freecashflow}}<td>
+          <td>{{company.sales}}<td>
+          <td>{{company.profits}}<td>
+          <td>{{company.profitlossperc}}<td>
+          <td>{{company.roa}}<td>
+          <td>{{company.employees}}<td>
+          <td>{{company.peyoy}}<td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      var companyData = <%= JSON.stringify(csv.big_chart) %>
+    </script>
+    <script src="app.js"></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_adFoot.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>
