@@ -9,23 +9,17 @@
   </head>
   <body ng-app="top-companies">
     <div ng-controller="CompanyController" ng-cloak>
+      <p>How Northwest companies compare</p>
+      <p>No single yardstick would be a fair gauge to rank the Northwest's publicly traded companies. We picked five measures of corporate performance — return on invested capital, free cash-flow yield, stock-price appreciation, revenue growth and dividend yield — then combined them into a single ranking using our proprietary formula. Read more about our methodology.</p>
+      <p>TO USE THE CHART: Click on a column to sort the chart, or filter by industry. The last column graphs the last five years of data for each company; you can select more options to graph from the dropdown menu. All columns are for fiscal year 2013, except where otherwise noted. Stock prices are year-end (Dec. 31). Cells marked "NM" are "not meaningful."</p>
       <table>
-        <th>Rank
-        <th>Company
-        <th>
-        <th>ROIC
-        <th>Market Cap
-        <th>Free Cash Flow
-        <th>Sales
-        <th>Profits
-        <th>Profit/Loss %
-        <th>ROA
-        <th>Employees
-        <th>P-E (YOY)
-        <th>Stock Price
+        <th ng-repeat="header in headers" ng-click="sortTable(header)" ng-class="{left: header.short == 'company'}">
+          {{header.title}}
+        </th>
+
         <tr ng-repeat="company in companies">
-          <td>{{company.rank}}
-          <td>
+          <td class="rank">{{company.rank}}
+          <td class="name">
             {{company.company}}
             <div class="symbol">{{company.symbol}}</div>
           <td><img src="./assets/icon_{{company.icon}}.jpg">
