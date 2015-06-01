@@ -10,19 +10,34 @@
   <body ng-app="top-companies">
     <div ng-controller="CompanyController" ng-cloak>
       <table>
+        <th>Rank
+        <th>Company
+        <th>
+        <th>ROIC
+        <th>Market Cap
+        <th>Free Cash Flow
+        <th>Sales
+        <th>Profits
+        <th>Profit/Loss %
+        <th>ROA
+        <th>Employees
+        <th>P-E (YOY)
+        <th>Stock Price
         <tr ng-repeat="company in companies">
-          <td>{{company.rank}}</td>
-          <td>{{company.company}}<td>
-          <td>{{company.industry}}<td>
-          <td>{{company.roic}}<td>
-          <td>{{company.marketcap}}<td>
-          <td>{{company.freecashflow}}<td>
-          <td>{{company.sales}}<td>
-          <td>{{company.profits}}<td>
-          <td>{{company.profitlossperc}}<td>
-          <td>{{company.roa}}<td>
-          <td>{{company.employees}}<td>
-          <td>{{company.peyoy}}<td>
+          <td>{{company.rank}}
+          <td>
+            {{company.company}}
+            <div class="symbol">{{company.symbol}}</div>
+          <td><img src="./assets/icon_{{company.icon}}.jpg">
+          <td>{{company.roic}}
+          <td>{{company.marketcap}}
+          <td>{{company.freecashflow}}
+          <td>{{company.sales}}
+          <td>{{company.profits}}
+          <td>{{company.profitlossperc}}
+          <td>{{company.roa}}
+          <td>{{company.employees}}
+          <td>{{company.peyoy}}
         </tr>
       </table>
     </div>
