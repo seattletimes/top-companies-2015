@@ -10,7 +10,7 @@ app.controller("CompanyController", ["$scope", function($scope) {
   $scope.headers = [
     { title: "Rank", short: "rank" },
     { title: "Company", short: "company" },
-    { title: "", short: "industry" },
+    { title: "Industry", short: "industry" },
     { title: "ROIC", short: "roic" },
     { title: "Market Cap", short: "marketcap" },
     { title: "Free Cash Flow", short: "freecashflow" },
@@ -21,7 +21,7 @@ app.controller("CompanyController", ["$scope", function($scope) {
     { title: "Employees", short: "employees" },
     { title: "P-E (YOY)", short: "peyoy" }
     ];
-  $scope.lastSort = null;
+  $scope.lastSort = $scope.headers[0];
   $scope.sortOrder = 1;
 
   $scope.sortTable = function(header) {
