@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
     <%= t.include("partials/_adHead.html") %>
   </head>
 
@@ -68,7 +68,10 @@
     <!-- ####################### -->
 
 
-    <div ng-controller="CompanyController" ng-cloak>
+    <div class="chart" ng-controller="CompanyController" ng-cloak>
+      <p class="hed">How Northwest companies compare
+      <p>tktktk
+      <p>TO USE THE CHART: tktktk
       <table sticky>
         <thead>
           <th ng-repeat="header in headers" ng-click="sortTable(header)" ng-class="{left: header.short == 'company', up: lastSort == header && sortOrder == -1, down: lastSort == header && sortOrder == 1}">
@@ -81,7 +84,9 @@
           <td class="name">
             {{company.company}}
             <div class="symbol">{{company.symbol}}</div>
-          <td class="industry"><img src="./assets/icon_{{company.icon}}.jpg">
+          <td class="industry">
+            <img src="./assets/icon_{{company.icon}}.jpg">
+            <div class="tooltip">{{company.industry}}</div>
           <td>{{company.roic}}
           <td>{{company.marketcap}}
           <td>{{company.freecashflow}}
@@ -93,7 +98,15 @@
           <td>{{company.peyoy}}
         </tr>
       </table>
-    </div>
+
+      <div class="credits">
+        <div><strong>Reporter:</strong> Jon Talton
+        <div><strong>Editor:</strong> Becky Bisbee
+        <div><strong>Photographer:</strong> tktktk
+        <div><strong>Web designer:</strong> tktktk
+        <div><strong>Web developer:</strong> Audrey Carlsen
+        <div><strong>Data sources:</strong> tktktk
+      </div>
 
       <footer>
         <a class="logo" href="http://seattletimes.com">
@@ -101,7 +114,8 @@
         </a>
         <a class="share-bottom"></a>
       </footer>
-      
+    </div>
+
     <script>
       var companyData = <%= JSON.stringify(csv.big_chart) %>
     </script>

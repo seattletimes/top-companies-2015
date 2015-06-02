@@ -22,6 +22,21 @@ body {
   font-size: 16px;
 }
 
+.chart {
+  position: absolute;
+  background: white;
+  width: 100%;
+  padding: 20px 80px;
+
+  .hed {
+    font-family: Oswald;
+    font-size: 28px;
+  }
+  p {
+    font-family: @df-serif;
+  }
+}
+
 table {
   border-collapse: collapse;
   text-align: right;
@@ -77,9 +92,36 @@ table {
   }
   .industry {
     text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      .tooltip {
+        display: block;
+      }
+      img {
+        opacity: .75;
+      }
+    }
+    .tooltip {
+      display: none;
+      position: absolute;
+      background: @df-off-white;
+      padding: 3px 5px;
+      font-size: 14px;
+      border: @df-light-gray;
+    }
   }
 
   img {
     width: 30px;
+  }
+}
+
+.credits {
+  padding: 30px 0;
+  font-family: Oswald, sans-serif;
+
+  div {
+    padding-top: 5px;
   }
 }
