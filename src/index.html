@@ -72,14 +72,21 @@
       <p class="hed">How Northwest companies compare
       <p>tktktk
       <p>TO USE THE CHART: tktktk
-      <table sticky>
+
+      <label>Filter by industry:</label>
+      <select ng-model="filterBy">
+        <option value="all">All Industries</option>
+        <option ng-repeat="industry in industries" value="{{industry}}">{{industry}}</option>
+      </select>
+
+      <table>
         <thead>
           <th ng-repeat="header in headers" ng-click="sortTable(header)" ng-class="{left: header.short == 'company', up: lastSort == header && sortOrder == -1, down: lastSort == header && sortOrder == 1}">
             {{header.title}}
           </th>
         </thead>
 
-        <tr ng-repeat="company in companies">
+        <tr ng-repeat="company in companies | filter:industryFilter">
           <td class="rank">{{company.rank}}
           <td class="name">
             {{company.company}}

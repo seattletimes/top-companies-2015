@@ -7,6 +7,14 @@ var app = angular.module("top-companies", []);
 
 app.controller("CompanyController", ["$scope", function($scope) {
   $scope.companies = companyData;
+  $scope.industries = ["Banking", "Biotechnology/biomed.", "Business services", "Communications/media", "Computer hardware", "Computer software/srvcs.", "Consumer products", "Forest products", "Insurance", "Manufacturing", "Mining", "Retail", "Semiconductors & equip.", "Telecommunications", "Travel & transportation", "Utilities"].sort();
+  $scope.filterBy = "all";
+
+  $scope.industryFilter = function(value) {
+      if ($scope.filterBy == "all") return true;
+      return value.industry == $scope.filterBy;
+    }
+
   $scope.headers = [
     { title: "Rank", short: "rank" },
     { title: "Company", short: "company" },
