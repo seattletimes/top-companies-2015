@@ -12,8 +12,8 @@
     "cashflow": "$66.1 million",
     "sales": "$532.8 million",
     "story": "http://www.seattletimes.com/business/barrett-beefs-up-staffers-for-a-host-of-companies/",
-    "image": "05Seager.JPG",
-    "overlay": "left"
+    "image": "BestNW_Microsoft_Aerial.jpg",
+    "overlay": "right"
   },
   {
     "title": "2",
@@ -28,8 +28,8 @@
     "cashflow": "$66.1 million",
     "sales": "$532.8 million",
     "story": "http://www.seattletimes.com/business/barrett-beefs-up-staffers-for-a-host-of-companies/",
-    "image": "06Morrison.JPG",
-    "overlay": "right"
+    "image": "BestNW_Symetra.jpg",
+    "overlay": "left"
   },
   {
     "title": "3",
@@ -44,8 +44,8 @@
     "cashflow": "$66.1 million",
     "sales": "$532.8 million",
     "story": "http://www.seattletimes.com/business/barrett-beefs-up-staffers-for-a-host-of-companies/",
-    "image": "07Ackley.JPG",
-    "overlay": "left"
+    "image": "BestNW_MicronDurkin.jpg",
+    "overlay": "right"
   },
   {
     "title": "4",
@@ -60,7 +60,7 @@
     "cashflow": "$66.1 million",
     "sales": "$532.8 million",
     "story": "http://www.seattletimes.com/business/barrett-beefs-up-staffers-for-a-host-of-companies/",
-    "image": "08Zunino.JPG",
+    "image": "BestNW_F5.jpg",
     "overlay": "right"
   },
   {
@@ -76,7 +76,7 @@
     "cashflow": "$66.1 million",
     "sales": "$532.8 million",
     "story": "http://www.seattletimes.com/business/barrett-beefs-up-staffers-for-a-host-of-companies/",
-    "image": "09Miller.JPG",
-    "overlay": "left"
+    "image": "BestNW_Expedia.jpg",
+    "overlay": "right"
   }
 ]

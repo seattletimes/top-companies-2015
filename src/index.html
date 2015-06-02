@@ -69,15 +69,17 @@
 
 
     <div class="chart" ng-controller="CompanyController" ng-cloak>
-      <p class="hed">How Northwest companies compare
+      <p class="hed">Chart title
       <p>tktktk
       <p>TO USE THE CHART: tktktk
 
-      <label>Filter by industry:</label>
-      <select ng-model="filterBy">
-        <option value="all">All Industries</option>
-        <option ng-repeat="industry in industries" value="{{industry}}">{{industry}}</option>
-      </select>
+      <div>
+        <label class="filter">Filter by industry:</label>
+        <select ng-model="filterBy">
+          <option value="all">All Industries</option>
+          <option ng-repeat="industry in industries" value="{{industry}}">{{industry}}</option>
+        </select>
+      </div>
 
       <table>
         <thead>
