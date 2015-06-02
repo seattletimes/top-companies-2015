@@ -5,17 +5,76 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <%= t.include("partials/_adHead.html") %>
   </head>
+
   <body ng-app="top-companies">
+    <div class="fixed-frame"></div>
+
+    <main class="scroll">
+      <% json.BestOfTheNW2015_Top5.sort(function(a, b) { return a.rank - b.rank }).forEach(function(company, i) { %>
+        <section class="parallax-play" data-index="<%= i %>">
+        <img src="assets/<%= company.image %>" class="fixable">
+        <div class="description <%= company.overlay %>">
+          <h3 class="rank"><%= company.rank %> -- <%= company.company %></h3>
+
+          <div class="copy">
+            <p class="chatter"><%= company.chatter %></p>
+
+            <h2>Headquarters</h2>
+            <p><%= company.headquarters %>
+            
+            <h2>CEO</h2>
+            <p><%= company.ceo %>
+            
+            <h2>Employees in 2014</h2>
+            <p><%= company.employees %>
+            
+            <h2>What It Does</h2>
+            <p><%= company.whatitdoes %>
+            
+            <h2>What sets it apart</h2>
+            <p><%= company.setsapart %>
+
+            <h2>2014 Cash flow</h2>
+            <p><%= company.cashflow %>
+
+            <h2>2014 Sales</h2>
+            <p><%= company.sales %>
+
+            <a class="read-more" href="<%= company.story %>">
+              Read story by tktkt &rarr;</i>
+            </a>
+          </div>
+          <div class="credit">
+            Photo by tktkt / The Seattle Times
+          </div>
+        </div>
+      </section>
+      <% }) %>
+
+    </main>
+
+    <aside class="no-mobile-portrait">
+      <a class="ok" href="javascript:;">
+        <i class="fa fa-times-circle-o"></i>
+      </a>
+      Hey! This page is designed to look best in landscape mode. Rotate your device to see for yourself.
+      <i class="fa fa-rotate-left rotation"></i>
+    </aside>
+
+
+    <!-- ####################### -->
+
+
     <div ng-controller="CompanyController" ng-cloak>
-      <p>How Northwest companies compare</p>
-      <p>No single yardstick would be a fair gauge to rank the Northwest's publicly traded companies. We picked five measures of corporate performance — return on invested capital, free cash-flow yield, stock-price appreciation, revenue growth and dividend yield — then combined them into a single ranking using our proprietary formula. Read more about our methodology.</p>
-      <p>TO USE THE CHART: Click on a column to sort the chart, or filter by industry. The last column graphs the last five years of data for each company; you can select more options to graph from the dropdown menu. All columns are for fiscal year 2013, except where otherwise noted. Stock prices are year-end (Dec. 31). Cells marked "NM" are "not meaningful."</p>
-      <table>
-        <th ng-repeat="header in headers" ng-click="sortTable(header)" ng-class="{left: header.short == 'company', up: lastSort == header && sortOrder == -1, down: lastSort == header && sortOrder == 1}">
-          {{header.title}}
-        </th>
+      <table sticky>
+        <thead>
+          <th ng-repeat="header in headers" ng-click="sortTable(header)" ng-class="{left: header.short == 'company', up: lastSort == header && sortOrder == -1, down: lastSort == header && sortOrder == 1}">
+            {{header.title}}
+          </th>
+        </thead>
 
         <tr ng-repeat="company in companies">
           <td class="rank">{{company.rank}}
@@ -36,6 +95,13 @@
       </table>
     </div>
 
+      <footer>
+        <a class="logo" href="http://seattletimes.com">
+          <img src="./assets/st-logo.png">
+        </a>
+        <a class="share-bottom"></a>
+      </footer>
+      
     <script>
       var companyData = <%= JSON.stringify(csv.big_chart) %>
     </script>

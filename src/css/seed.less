@@ -6,6 +6,16 @@
 }
 
 @import "seattletimes";
+@import "scroll";
+@import "sections";
+@import "warning";
+
+.transform(...) {
+  -webkit-transform: @arguments;
+  -moz-transform: @arguments;
+  -ms-transform: @arguments;
+  transform: @arguments;
+}
 
 body {
   font-family: @df-sans;
@@ -51,7 +61,7 @@ table {
     border-bottom: 1px solid @df-border-gray;
 
     td {
-      padding: 5px 10px;
+      padding: 2px 10px;
     }
   }
 
