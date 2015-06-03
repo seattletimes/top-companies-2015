@@ -6,6 +6,7 @@
 }
 
 @import "seattletimes";
+@import "page";
 @import "scroll";
 @import "sections";
 @import "warning";
@@ -26,11 +27,16 @@ body {
   position: absolute;
   background: white;
   width: 100%;
-  padding: 20px 80px;
 
   .hed {
     font-family: Oswald;
     font-size: 28px;
+    background: @df-charcoal;
+    color: @df-off-white;
+    padding: 20px 80px;
+  }
+  .inner {
+    padding: 20px 80px;
   }
   p {
     font-family: @df-serif;

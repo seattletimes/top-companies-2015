@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <%= t.include("partials/_adHead.html") %>
   </head>
 
@@ -13,6 +14,29 @@
     <div class="fixed-frame"></div>
 
     <main class="scroll">
+      <header class="intro">
+        <nav class="logo-bar">
+          <a class="logo" href="http://seattletimes.com">
+            <img src="./assets/st-logo.png">
+          </a>
+        </nav>
+
+        <div class="contents">
+
+          <h1>TOP NORTHWEST COMPANIES 2015</h1>
+
+          <p>
+            1st 2nd 3d 4th 5th Chart
+            <a class="share"></a>
+          </p>
+
+          <p class="instructions">
+            <i class="fa fa-chevron-down"></i>
+            Scroll to continue
+            <i class="fa fa-chevron-down"></i>
+        </div>
+      </header>
+
       <% json.BestOfTheNW2015_Top5.sort(function(a, b) { return a.rank - b.rank }).forEach(function(company, i) { %>
         <section class="parallax-play" data-index="<%= i %>">
         <img src="assets/<%= company.image %>" class="fixable">
@@ -56,13 +80,13 @@
               <h2>2014 Sales</h2>
               <p><%= company.sales %>
             </div>
-            
+
             <a class="read-more" href="<%= company.story %>">
               Read story by tktkt &rarr;</i>
             </a>
           </div>
           <div class="credit">
-            Photo by tktkt / The Seattle Times
+            Photo by <%= company.photographer %> / <%= company.publication %>
           </div>
         </div>
       </section>
@@ -83,52 +107,55 @@
 
 
     <div class="chart" ng-controller="CompanyController" ng-cloak>
-      <p class="hed">Chart title
-      <p>tktktk
-      <p>TO USE THE CHART: tktktk
+      <div class="hed">Chart title goes here</div>
+      
+      <div class="inner">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper, magna in accumsan hendrerit, lorem lectus pulvinar sem, non lobortis nisl mauris vitae velit. Integer ac nisl mauris. Nullam cursus est a libero maximus condimentum. Sed sit amet odio et mi venenatis eleifend eget vel lacus.
+        <p>TO USE THE CHART: Quisque urna ligula, porta nec volutpat id, varius a lectus. Cras ultricies elementum scelerisque. Donec neque orci, euismod non congue in, tincidunt ac lorem. Ut mi arcu, dignissim id molestie commodo, iaculis ut sem.
 
-      <div>
-        <label class="filter">Filter by industry:</label>
-        <select ng-model="filterBy">
-          <option value="all">All Industries</option>
-          <option ng-repeat="industry in industries" value="{{industry}}">{{industry}}</option>
-        </select>
-      </div>
+        <div>
+          <label class="filter">Filter by industry:</label>
+          <select ng-model="filterBy">
+            <option value="all">All Industries</option>
+            <option ng-repeat="industry in industries" value="{{industry}}">{{industry}}</option>
+          </select>
+        </div>
 
-      <table>
-        <thead>
-          <th ng-repeat="header in headers" ng-click="sortTable(header)" ng-class="{left: header.short == 'company', up: lastSort == header && sortOrder == -1, down: lastSort == header && sortOrder == 1}">
-            {{header.title}}
-          </th>
-        </thead>
+        <table>
+          <thead>
+            <th ng-repeat="header in headers" ng-click="sortTable(header)" ng-class="{left: header.short == 'company', up: lastSort == header && sortOrder == -1, down: lastSort == header && sortOrder == 1}">
+              {{header.title}}
+            </th>
+          </thead>
 
-        <tr ng-repeat="company in companies | filter:industryFilter">
-          <td class="rank">{{company.rank}}
-          <td class="name">
-            {{company.company}}
-            <div class="symbol">{{company.symbol}}</div>
-          <td class="industry">
-            <img src="./assets/icon_{{company.icon}}.jpg">
-            <div class="tooltip">{{company.industry}}</div>
-          <td>{{company.roic}}
-          <td>{{company.marketcap}}
-          <td>{{company.freecashflow}}
-          <td>{{company.sales}}
-          <td>{{company.profits}}
-          <td>{{company.profitlossperc}}
-          <td>{{company.roa}}
-          <td>{{company.employees}}
-          <td>{{company.peyoy}}
-        </tr>
-      </table>
+          <tr ng-repeat="company in companies | filter:industryFilter">
+            <td class="rank">{{company.rank}}
+            <td class="name">
+              {{company.company}}
+              <div class="symbol">{{company.symbol}}</div>
+            <td class="industry">
+              <img src="./assets/icon_{{company.icon}}.jpg">
+              <div class="tooltip">{{company.industry}}</div>
+            <td>{{company.roic}}
+            <td>{{company.marketcap}}
+            <td>{{company.freecashflow}}
+            <td>{{company.sales}}
+            <td>{{company.profits}}
+            <td>{{company.profitlossperc}}
+            <td>{{company.roa}}
+            <td>{{company.employees}}
+            <td>{{company.peyoy}}
+          </tr>
+        </table>
 
-      <div class="credits">
-        <div><strong>Reporter:</strong> Jon Talton
-        <div><strong>Editor:</strong> Becky Bisbee
-        <div><strong>Photographer:</strong> tktktk
-        <div><strong>Web designer:</strong> tktktk
-        <div><strong>Web developer:</strong> Audrey Carlsen
-        <div><strong>Data sources:</strong> tktktk
+        <div class="credits">
+          <div><strong>Reporter:</strong> Jon Talton
+          <div><strong>Editor:</strong> Becky Bisbee
+          <div><strong>Photographer:</strong> tktktk
+          <div><strong>Web designer:</strong> tktktk
+          <div><strong>Web developer:</strong> Audrey Carlsen
+          <div><strong>Data sources:</strong> tktktk
+        </div>
       </div>
 
       <footer>
