@@ -33,7 +33,7 @@ app.controller("CompanyController", ["$scope", function($scope) {
     { title: "Free Cash Flow", short: "freecashflow" },
     { title: "Sales", short: "sales" },
     { title: "Profits", short: "profits" },
-    { title: "Profit/Loss %", short: "profitlossperc" },
+    { title: "Profit / Loss %", short: "profitlossperc" },
     { title: "ROA", short: "roa" },
     { title: "Employees", short: "employees" },
     { title: "P-E (YOY)", short: "peyoy" }

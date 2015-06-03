@@ -1,95 +1,95 @@
-rank,company,industry,icon,symbol,roic,marketcap,freecashflow,sales,profits,profitlossperc,roa,employees,peyoy,
-1,Microsoft ,Computer software/srvcs.,computer,MSFT,20.6,381726,26746.00,86833.00,22074.00,1.0,14.0,128000,17.6,
-2,Symetra Financial,Insurance,banking,SYA,6.8,2669,978.30,2182.40,254.40,15.3,0.8,1400,11.8,
-3,Micron Technology,Semiconductors & equip.,semiconductor,MU,20.7,37636,3041.00,16358.00,3045.00,155.9,14.6,30400,10.7,
-4,F5 Networks,Computer software/srvcs.,computer,FFIV,23.7,9481,526.30,1732.00,311.20,12.2,14.1,3834,29.5,
-5,Expedia ,Travel & transportation,transportation,EXPE,9.3,10846,1038.60,5763.50,398.10,71.0,4.8,18210,25.4,
-6,Nautilus ,Consumer products,retail,NLS,35.9,476,31.20,274.40,18.80,-60.8,11.8,340,23.7,
-7,Heritage Financial,Banking,banking,HFWA,8.8,531,47.40,137.60,21.00,119.5,0.8,748,17.4,
-8,Cascade Microtech,Semiconductors & equip.,semiconductor,CSCD,11.3,239,19.30,136.00,9.90,-26.0,8.0,449,23.7,
-9,Nike,Consumer products,retail,NKE,19.0,83074,2123.00,27799.00,2693.00,8.9,14.9,56500,28.6,
-10,Alaska Air Group,Travel & transportation,transportation,ALK,14.1,7857,336.00,5368.00,605.00,19.1,10.1,13952,14.3,
-11,Costco Wholesale,Retail,retail,COST,11.9,60438,1991.00,112640.00,2058.00,0.9,6.5,195000,28.5,
-12,Nordstrom,Retail,retail,JWN,15.8,15092,517.00,12540.00,734.00,-0.1,8.8,67000,20.9,
-13,Zumiez ,Retail,retail,ZUMZ,13.6,1129,30.90,724.30,45.90,9.0,10.8,6500,23.8,
-14,Expeditors International,Travel & transportation,transportation,EXPD,16.4,8550,357.50,6564.70,376.90,8.1,12.8,14670,23.2,
-15,Greenbrier Cos.,Travel & transportation,transportation,GBX,15.7,1445,65.70,2204.00,111.90,NM,8.0,9244,16.6,
-16,Bsquare ,Computer software/srvcs.,computer,BSQR,8.3,54,5.00,95.90,2.30,NM,5.1,183,21.7,
-17,TrueBlue ,Business services,bizservices,TBI,12.2,946,30.60,2174.00,65.70,46.2,7.4,5000,13.4,
-18,Columbia Sportswear,Consumer products,retail,COLM,9.4,3110,125.50,2100.60,137.20,45.4,8.1,5326,23.4,
-19,Lattice Semiconductor,Semiconductors & equip.,semiconductor,LSCC,10.7,818,29.90,366.10,48.60,117.6,10.1,784,20.8,
-20,US Ecology ,Business services,bizservices,ECOL,16.6,868,42.90,447.40,38.20,18.9,6.3,1800,20.2,
-21,Banner ,Banking,banking,BANR,6.7,842,92.10,244.90,54.20,16.3,1.2,1193,16.4,
-22,Starbucks,Retail,retail,SBUX,32.3,61570,-553.10,16447.80,2068.10,24816.9,18.6,191000,56.3,
-23,Outerwall,Retail,retail,OUTR,12.0,1424,240.40,2303.00,106.60,-39.0,6.1,2760,12.4,
-24,Paccar,Travel & transportation,transportation,PCAR,8.8,24110,586.30,18997.00,1358.80,16.0,6.6,23300,17.8,
-25,First Financial,Banking,banking,FFNW,4.5,183,18.40,39.20,10.70,-56.3,1.2,101,16.7,
-26,Flir Systems,Manufacturing,manufacturing,FLIR,10.2,4510,165.00,1530.70,200.30,13.1,8.5,2741,21.8,
-27,Columbia Banking System,Banking,banking,COLB,6.3,1578,125.10,367.80,81.60,35.9,1.0,1844,16.7,
-28,Riverview Bancorp,Banking,banking,RVSB,0.7,101,5.70,35.20,19.40,637.7,2.4,219,5.1,
-29,Pope Resources,Forest products,forest,POPE,5.8,269,28.50,87.50,12.40,-5.5,3.8,54,NM,
-30,Precision Castparts,Manufacturing,manufacturing,PCP,11.4,34149,1527.00,9616.00,1777.00,24.5,10.0,29100,18.6,
-31,Umpqua Holdings,Banking,banking,UMPQ,-2.8,3745,290.20,1001.80,147.50,50.0,0.9,4569,16.3,
-32,Weyerhaeuser ,Forest products,forest,WY,7.1,18823,693.00,7403.00,1826.00,224.3,13.0,12800,29.8,
-33,Blue Nile ,Retail,retail,NILE,66.5,427,13.40,473.50,9.70,-10.5,5.8,288,46.2,
-34,Idacorp ,Utilities,utilities,IDA,6.6,3327,90.20,1282.50,193.50,6.1,3.5,2021,17.1,
-35,Pacific Continental,Banking,banking,PCBK,6.5,251,23.70,67.00,16.00,16.5,1.1,291,15.6,
-36,Marchex ,Business services,bizservices,MCHX,-12.3,173,19.20,182.60,-19.10,NM,-11.1,367,NM,
-37,Barrett Business Services,Business services,bizservices,BBSI,-14.3,195,65.00,636.20,-27.10,NM,-7.1,519,NM,
-38,StanCorp Financial Group,Insurance,banking,SFG,6.6,2940,227.50,2770.10,219.30,-4.0,1.0,2803,13.4,
-39,Mentor Graphics,Computer software/srvcs.,computer,MENT,10.5,2522,118.90,1156.40,155.30,11.9,8.5,5558,16.7,
-40,Northwest Natural Gas,Utilities,utilities,NWN,6.9,1361,95.60,754.00,58.70,-3.0,1.9,612,23.1,
-41,Timberland Bancorp,Banking,banking,TSBK,2.6,75,7.40,38.40,5.90,23.0,0.8,229,12.8,
-42,Lithia Motors,Retail,retail,LAD,7.6,2274,-55.70,5390.30,138.70,30.9,6.0,8827,16.4,
-43,Plum Creek Timber,Forest products,forest,PCL,6.1,7527,368.00,1476.00,214.00,0.0,3.9,701,36.0,
-44,Boise Cascade,Forest products,forest,BCC,8.5,1464,40.60,3573.70,80.00,-31.6,6.9,5670,18.3,
-45,Radiant Logistics,Travel & transportation,transportation,RLGT,10.8,147,6.70,349.10,5.10,39.9,5.0,291,38.9,
-46,Avista ,Utilities,utilities,AVA,7.6,2200,-64.70,1472.60,192.00,72.9,4.2,1658,19.9,
-47,Schnitzer Steel,Manufacturing,manufacturing,SCHN,2.0,604,102.10,2543.60,5.90,NM,0.4,3371,30.7,
-48,FEI ,Manufacturing,manufacturing,FEIC,9.8,3776,93.40,956.30,105.10,-17.1,7.4,2660,30.4,
-49,Sound Financial,Banking,banking,SFBC,5.1,48,2.80,25.70,4.20,7.6,0.9,81,11.6,
-50,Zulily,Retail,retail,ZU ,2.3,2935,62.30,1200.10,14.90,15.4,3.5,2907,212.7,
-51,Blount International,Manufacturing,manufacturing,BLT,3.7,867,44.60,944.80,36.60,655.5,4.5,4400,17.0,
-52,Tableau Software,Computer software/srvcs.,computer,DATA,0.8,5922,52.70,412.60,5.90,-17.0,1.0,1947,2119.0,
-53,Washington Federal,Banking,banking,WAFD,3.6,2161,121.90,564.40,157.40,3.9,1.1,1909,14.1,
-54,Data I/O,Computer hardware,computer,DAIO,8.0,27,-0.70,21.90,1.10,NM,6.0,84,24.1,
-55,Blucora,Computer software/srvcs.,computer,BCOR,-2.7,566,50.50,580.70,-35.50,NM,-3.8,496,306.4,
-56,Cray,Computer hardware,computer,CRAY,10.9,1408,-75.30,561.60,62.30,93.4,9.9,1138,22.5,
-57,Clearwater Paper,Forest products,forest,CLW,0.5,1341,46.10,1967.10,-2.30,NM,-0.1,3290,21.9,
-58,Anchor Bancorp,Banking,banking,ANCB,10.5,51,6.70,21.90,0.40,NM,0.1,123,5.3,
-59,Rentrak ,Business services,bizservices,RENT,-13.1,1106,-1.40,75.60,-4.30,-81.2,-5.6,524,NM,
-60,Onvia ,Business services,bizservices,ONVI,-7.0,37,2.40,22.60,-0.70,-73.3,-4.3,136,NM,
-61,Northwest Pipe,Manufacturing,manufacturing,NWPX,-0.9,287,20.80,403.30,-17.90,1837.9,-4.6,943,69.1,
-62,Potlatch ,Forest products,forest,PCH,11.0,1700,-281.80,607.00,89.90,27.4,10.5,887,19.4,
-63,FS Bancorp ,Banking,banking,FSBW,8.9,59,-4.90,34.90,4.50,15.8,1.0,208,11.9,
-64,Willamette Valley Vineyards,Consumer products,retail,WVVI,7.3,28,0.50,15.20,2.20,51.8,7.2,78,12.9,
-65,Zillow Group,Business services,bizservices,Z,-7.6,4320,12.90,325.90,-43.60,250.2,-6.9,1215,NM,
-66,Esterline Technologies,Manufacturing,manufacturing,ESL,5.5,3523,170.70,2051.20,102.40,-37.8,3.2,12874,19.7,
-67,Itron,Manufacturing,manufacturing,ITRI,-1.5,1632,88.50,1970.70,-22.90,-84.4,-1.3,8000,69.5,
-68,T-Mobile US,Telecommunications,communications,TMUS,3.5,21753,-171.00,29564.00,247.00,605.7,0.5,45000,58.0,
-69,Amazon.com ,Retail,retail,AMZN,0.2,144313,1949.00,88988.00,-241.00,NM,-0.5,154100,NM,
-70,Hecla Mining ,Mining,mining,HL,-0.1,1025,-39.40,500.80,17.80,NM,0.8,1354,78.2,
-71,Portland General Electric,Utilities,utilities,POR,-21.9,2959,-497.00,1900.00,175.00,66.7,2.7,2600,17.4,
-72,CUI Global ,Computer hardware,computer,CUI,-2.9,155,-4.30,76.00,-2.80,197.0,-2.9,200,NM,
-73,Cascade Bancorp,Banking,banking,CACB,-4.5,376,4.50,87.50,3.70,-92.7,0.2,513,24.1,
-74,Jewett-Cameron Trading,Forest products,forest,JCTCF,10.1,26,0.30,42.30,1.90,-40.7,8.6,46,15.6,
-75,Craft Brew Alliance,Consumer products,retail,BREW,2.9,255,-5.90,200.00,3.10,57.1,1.8,736,81.4,
-76,Key Tronic ,Manufacturing,manufacturing,KTCC,5.7,84,-6.30,305.40,7.60,-39.5,5.2,3343,31.8,
-77,Digimarc ,Computer software/srvcs.,computer,DMRC,-30.4,229,-8.10,25.70,-15.80,3020.3,-27.6,150,NM,
-78,HomeStreet,Banking,banking,HMST,2.9,259,-368.50,297.00,22.30,-6.5,0.7,1611,10.6,
-79,Schmitt Industries,Manufacturing,manufacturing,SMIT,-5.4,9,-0.40,12.10,-0.50,0.0,-4.8,44,NM,
-80,Erickson ,Travel & transportation,transportation,EAC,1.0,115,-42.80,346.60,-10.30,NM,-1.4,1000,21.5,
-81,Seattle Genetics,Biotechnology/biomed.,biotech,SGEN,-36.7,3983,-77.20,286.80,-76.10,21.8,-16.2,657,NM,
-82,Red Lion Hotels,Travel & transportation,transportation,RLH,-2.1,126,-14.30,145.40,2.30,NM,1.0,1622,NM,
-83,Omeros ,Biotechnology/biomed.,biotech,OMER,704.0,843,-58.10,0.50,-73.70,85.1,-533.4,103,NM,
-84,Nanostring Technologies,Biotechnology/biomed.,biotech,NSTG,-60.8,254,-40.00,47.60,-50.00,70.9,-59.9,276,NM,
-85,Electro Scientific Industries,Computer hardware,computer,ESIO,-12.4,238,-26.70,181.20,-38.30,-29.9,-12.9,658,NM,
-86,Key Technology,Manufacturing,manufacturing,KTEC,-9.1,82,-6.80,118.30,-5.40,NM,-5.1,553,NM,
-87,Intellicheck Mobilisa,Computer hardware,computer,IDN,-26.0,15,-2.50,6.60,-7.60,215.3,-45.3,31,NM,
-88,RadiSys,Computer hardware,computer,RSYS,-26.2,85,-9.20,192.70,-27.60,-44.2,-16.4,859,NM,
-89,ClearSign Combustion,Manufacturing,manufacturing,CLIR,-246.7,71,-5.50,0.00,-7.30,38.1,-156.9,12,NM,
-90,Ambassadors Group,Retail,retail,EPAX,-49.6,43,1.60,39.60,-17.50,147.9,-22.7,155,NM,
-91,RealNetworks ,Communications/media,communications,RNWK,-35.7,254,-62.70,156.20,-71.80,21.7,-24.2,769,NM,
-92,OncoGenex Pharmaceuticals,Biotechnology/biomed.,biotech,OGXI,-85.9,49,-17.40,27.10,-26.20,-17.6,-46.9,35,NM,
+rank,prev,company,industry,icon,symbol,roic,marketcap,freecashflow,sales,profits,profitlossperc,roa,employees,peyoy
+1,2,Microsoft ,Computer software/srvcs.,computer,MSFT,20.6,381726,26746.00,86833.00,22074.00,1.0,14.0,128000,17.6
+2,7,Symetra Financial,Insurance,banking,SYA,6.8,2669,978.30,2182.40,254.40,15.3,0.8,1400,11.8
+3,13,Micron Technology,Semiconductors & equip.,semiconductor,MU,20.7,37636,3041.00,16358.00,3045.00,155.9,14.6,30400,10.7
+4,31,F5 Networks,Computer software/srvcs.,computer,FFIV,23.7,9481,526.30,1732.00,311.20,12.2,14.1,3834,29.5
+5,40,Expedia ,Travel & transportation,transportation,EXPE,9.3,10846,1038.60,5763.50,398.10,71.0,4.8,18210,25.4
+6,4,Nautilus ,Consumer products,retail,NLS,35.9,476,31.20,274.40,18.80,-60.8,11.8,340,23.7
+7,39,Heritage Financial,Banking,banking,HFWA,8.8,531,47.40,137.60,21.00,119.5,0.8,748,17.4
+8,17,Cascade Microtech,Semiconductors & equip.,semiconductor,CSCD,11.3,239,19.30,136.00,9.90,-26.0,8.0,449,23.7
+9,10,Nike,Consumer products,retail,NKE,19.0,83074,2123.00,27799.00,2693.00,8.9,14.9,56500,28.6
+10,3,Alaska Air Group,Travel & transportation,transportation,ALK,14.1,7857,336.00,5368.00,605.00,19.1,10.1,13952,14.3
+11,38,Costco Wholesale,Retail,retail,COST,11.9,60438,1991.00,112640.00,2058.00,0.9,6.5,195000,28.5
+12,29,Nordstrom,Retail,retail,JWN,15.8,15092,517.00,12540.00,734.00,-0.1,8.8,67000,20.9
+13,41,Zumiez ,Retail,retail,ZUMZ,13.6,1129,30.90,724.30,45.90,9.0,10.8,6500,23.8
+14,30,Expeditors International,Travel & transportation,transportation,EXPD,16.4,8550,357.50,6564.70,376.90,8.1,12.8,14670,23.2
+15,49,Greenbrier Cos.,Travel & transportation,transportation,GBX,15.7,1445,65.70,2204.00,111.90,NM,8.0,9244,16.6
+16,57,Bsquare ,Computer software/srvcs.,computer,BSQR,8.3,54,5.00,95.90,2.30,NM,5.1,183,21.7
+17,20,TrueBlue ,Business services,bizservices,TBI,12.2,946,30.60,2174.00,65.70,46.2,7.4,5000,13.4
+18,8,Columbia Sportswear,Consumer products,retail,COLM,9.4,3110,125.50,2100.60,137.20,45.4,8.1,5326,23.4
+19,43,Lattice Semiconductor,Semiconductors & equip.,semiconductor,LSCC,10.7,818,29.90,366.10,48.60,117.6,10.1,784,20.8
+20,32,US Ecology ,Business services,bizservices,ECOL,16.6,868,42.90,447.40,38.20,18.9,6.3,1800,20.2
+21,11,Banner ,Banking,banking,BANR,6.7,842,92.10,244.90,54.20,16.3,1.2,1193,16.4
+22,14,Starbucks,Retail,retail,SBUX,32.3,61570,-553.10,16447.80,2068.10,24816.9,18.6,191000,56.3
+23,33,Outerwall,Retail,retail,OUTR,12.0,1424,240.40,2303.00,106.60,-39.0,6.1,2760,12.4
+24,54,Paccar,Travel & transportation,transportation,PCAR,8.8,24110,586.30,18997.00,1358.80,16.0,6.6,23300,17.8
+25,25,First Financial,Banking,banking,FFNW,4.5,183,18.40,39.20,10.70,-56.3,1.2,101,16.7
+26,22,Flir Systems,Manufacturing,manufacturing,FLIR,10.2,4510,165.00,1530.70,200.30,13.1,8.5,2741,21.8
+27,48,Columbia Banking System,Banking,banking,COLB,6.3,1578,125.10,367.80,81.60,35.9,1.0,1844,16.7
+28,NR,Riverview Bancorp,Banking,banking,RVSB,0.7,101,5.70,35.20,19.40,637.7,2.4,219,5.1
+29,51,Pope Resources,Forest products,forest,POPE,5.8,269,28.50,87.50,12.40,-5.5,3.8,54,NM
+30,21,Precision Castparts,Manufacturing,manufacturing,PCP,11.4,34149,1527.00,9616.00,1777.00,24.5,10.0,29100,18.6
+31,19,Umpqua Holdings,Banking,banking,UMPQ,-2.8,3745,290.20,1001.80,147.50,50.0,0.9,4569,16.3
+32,37,Weyerhaeuser ,Forest products,forest,WY,7.1,18823,693.00,7403.00,1826.00,224.3,13.0,12800,29.8
+33,36,Blue Nile ,Retail,retail,NILE,66.5,427,13.40,473.50,9.70,-10.5,5.8,288,46.2
+34,53,Idacorp ,Utilities,utilities,IDA,6.6,3327,90.20,1282.50,193.50,6.1,3.5,2021,17.1
+35,12,Pacific Continental,Banking,banking,PCBK,6.5,251,23.70,67.00,16.00,16.5,1.1,291,15.6
+36,63,Marchex ,Business services,bizservices,MCHX,-12.3,173,19.20,182.60,-19.10,NM,-11.1,367,NM
+37,1,Barrett Business Services,Business services,bizservices,BBSI,-14.3,195,65.00,636.20,-27.10,NM,-7.1,519,NM
+38,6,StanCorp Financial Group,Insurance,banking,SFG,6.6,2940,227.50,2770.10,219.30,-4.0,1.0,2803,13.4
+39,18,Mentor Graphics,Computer software/srvcs.,computer,MENT,10.5,2522,118.90,1156.40,155.30,11.9,8.5,5558,16.7
+40,58,Northwest Natural Gas,Utilities,utilities,NWN,6.9,1361,95.60,754.00,58.70,-3.0,1.9,612,23.1
+41,16,Timberland Bancorp,Banking,banking,TSBK,2.6,75,7.40,38.40,5.90,23.0,0.8,229,12.8
+42,46,Lithia Motors,Retail,retail,LAD,7.6,2274,-55.70,5390.30,138.70,30.9,6.0,8827,16.4
+43,59,Plum Creek Timber,Forest products,forest,PCL,6.1,7527,368.00,1476.00,214.00,0.0,3.9,701,36.0
+44,NR,Boise Cascade,Forest products,forest,BCC,8.5,1464,40.60,3573.70,80.00,-31.6,6.9,5670,18.3
+45,NR,Radiant Logistics,Travel & transportation,transportation,RLGT,10.8,147,6.70,349.10,5.10,39.9,5.0,291,38.9
+46,68,Avista ,Utilities,utilities,AVA,7.6,2200,-64.70,1472.60,192.00,72.9,4.2,1658,19.9
+47,62,Schnitzer Steel,Manufacturing,manufacturing,SCHN,2.0,604,102.10,2543.60,5.90,NM,0.4,3371,30.7
+48,23,FEI ,Manufacturing,manufacturing,FEIC,9.8,3776,93.40,956.30,105.10,-17.1,7.4,2660,30.4
+49,9,Sound Financial,Banking,banking,SFBC,5.1,48,2.80,25.70,4.20,7.6,0.9,81,11.6
+50,NR,Zulily,Retail,retail,ZU ,2.3,2935,62.30,1200.10,14.90,15.4,3.5,2907,212.7
+51,NR,Blount International,Manufacturing,manufacturing,BLT,3.7,867,44.60,944.80,36.60,655.5,4.5,4400,17.0
+52,NR,Tableau Software,Computer software/srvcs.,computer,DATA,0.8,5922,52.70,412.60,5.90,-17.0,1.0,1947,2119.0
+53,47,Washington Federal,Banking,banking,WAFD,3.6,2161,121.90,564.40,157.40,3.9,1.1,1909,14.1
+54,NR,Data I/O,Computer hardware,computer,DAIO,8.0,27,-0.70,21.90,1.10,NM,6.0,84,24.1
+55,15,Blucora,Computer software/srvcs.,computer,BCOR,-2.7,566,50.50,580.70,-35.50,NM,-3.8,496,306.4
+56,69,Cray,Computer hardware,computer,CRAY,10.9,1408,-75.30,561.60,62.30,93.4,9.9,1138,22.5
+57,56,Clearwater Paper,Forest products,forest,CLW,0.5,1341,46.10,1967.10,-2.30,NM,-0.1,3290,21.9
+58,85,Anchor Bancorp,Banking,banking,ANCB,10.5,51,6.70,21.90,0.40,NM,0.1,123,5.3
+59,72,Rentrak ,Business services,bizservices,RENT,-13.1,1106,-1.40,75.60,-4.30,-81.2,-5.6,524,NM
+60,26,Onvia ,Business services,bizservices,ONVI,-7.0,37,2.40,22.60,-0.70,-73.3,-4.3,136,NM
+61,83,Northwest Pipe,Manufacturing,manufacturing,NWPX,-0.9,287,20.80,403.30,-17.90,1837.9,-4.6,943,69.1
+62,34,Potlatch ,Forest products,forest,PCH,11.0,1700,-281.80,607.00,89.90,27.4,10.5,887,19.4
+63,28,FS Bancorp ,Banking,banking,FSBW,8.9,59,-4.90,34.90,4.50,15.8,1.0,208,11.9
+64,82,Willamette Valley Vineyards,Consumer products,retail,WVVI,7.3,28,0.50,15.20,2.20,51.8,7.2,78,12.9
+65,67,Zillow Group,Business services,bizservices,Z,-7.6,4320,12.90,325.90,-43.60,250.2,-6.9,1215,NM
+66,50,Esterline Technologies,Manufacturing,manufacturing,ESL,5.5,3523,170.70,2051.20,102.40,-37.8,3.2,12874,19.7
+67,78,Itron,Manufacturing,manufacturing,ITRI,-1.5,1632,88.50,1970.70,-22.90,-84.4,-1.3,8000,69.5
+68,65,T-Mobile US,Telecommunications,communications,TMUS,3.5,21753,-171.00,29564.00,247.00,605.7,0.5,45000,58.0
+69,64,Amazon.com ,Retail,retail,AMZN,0.2,144313,1949.00,88988.00,-241.00,NM,-0.5,154100,NM
+70,76,Hecla Mining ,Mining,mining,HL,-0.1,1025,-39.40,500.80,17.80,NM,0.8,1354,78.2
+71,75,Portland General Electric,Utilities,utilities,POR,-21.9,2959,-497.00,1900.00,175.00,66.7,2.7,2600,17.4
+72,81,CUI Global ,Computer hardware,computer,CUI,-2.9,155,-4.30,76.00,-2.80,197.0,-2.9,200,NM
+73,55,Cascade Bancorp,Banking,banking,CACB,-4.5,376,4.50,87.50,3.70,-92.7,0.2,513,24.1
+74,35,Jewett-Cameron Trading,Forest products,forest,JCTCF,10.1,26,0.30,42.30,1.90,-40.7,8.6,46,15.6
+75,73,Craft Brew Alliance,Consumer products,retail,BREW,2.9,255,-5.90,200.00,3.10,57.1,1.8,736,81.4
+76,42,Key Tronic ,Manufacturing,manufacturing,KTCC,5.7,84,-6.30,305.40,7.60,-39.5,5.2,3343,31.8
+77,77,Digimarc ,Computer software/srvcs.,computer,DMRC,-30.4,229,-8.10,25.70,-15.80,3020.3,-27.6,150,NM
+78,44,HomeStreet,Banking,banking,HMST,2.9,259,-368.50,297.00,22.30,-6.5,0.7,1611,10.6
+79,92,Schmitt Industries,Manufacturing,manufacturing,SMIT,-5.4,9,-0.40,12.10,-0.50,0.0,-4.8,44,NM
+80,60,Erickson ,Travel & transportation,transportation,EAC,1.0,115,-42.80,346.60,-10.30,NM,-1.4,1000,21.5
+81,79,Seattle Genetics,Biotechnology/biomed.,biotech,SGEN,-36.7,3983,-77.20,286.80,-76.10,21.8,-16.2,657,NM
+82,90,Red Lion Hotels,Travel & transportation,transportation,RLH,-2.1,126,-14.30,145.40,2.30,NM,1.0,1622,NM
+83,88,Omeros ,Biotechnology/biomed.,biotech,OMER,704.0,843,-58.10,0.50,-73.70,85.1,-533.4,103,NM
+84,NR,Nanostring Technologies,Biotechnology/biomed.,biotech,NSTG,-60.8,254,-40.00,47.60,-50.00,70.9,-59.9,276,NM
+85,87,Electro Scientific Industries,Computer hardware,computer,ESIO,-12.4,238,-26.70,181.20,-38.30,-29.9,-12.9,658,NM
+86,61,Key Technology,Manufacturing,manufacturing,KTEC,-9.1,82,-6.80,118.30,-5.40,NM,-5.1,553,NM
+87,NR,Intellicheck Mobilisa,Computer hardware,computer,IDN,-26.0,15,-2.50,6.60,-7.60,215.3,-45.3,31,NM
+88,93,RadiSys,Computer hardware,computer,RSYS,-26.2,85,-9.20,192.70,-27.60,-44.2,-16.4,859,NM
+89,91,ClearSign Combustion,Manufacturing,manufacturing,CLIR,-246.7,71,-5.50,0.00,-7.30,38.1,-156.9,12,NM
+90,45,Ambassadors Group,Retail,retail,EPAX,-49.6,43,1.60,39.60,-17.50,147.9,-22.7,155,NM
+91,89,RealNetworks ,Communications/media,communications,RNWK,-35.7,254,-62.70,156.20,-71.80,21.7,-24.2,769,NM
+92,86,OncoGenex Pharmaceuticals,Biotechnology/biomed.,biotech,OGXI,-85.9,49,-17.40,27.10,-26.20,-17.6,-46.9,35,NM
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,

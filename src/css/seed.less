@@ -34,9 +34,24 @@ body {
     background: @df-charcoal;
     color: @df-off-white;
     padding: 20px 80px;
+
+    @media (max-width: 1150px) {
+      padding: 20px 40px;
+    }
+    @media @tablet {
+      padding: 15px 10px;
+    }
   }
   .inner {
     padding: 20px 80px;
+
+    @media (max-width: 1150px) {
+      padding: 20px 40px;
+    }
+
+    @media @tablet {
+      padding: 15px 10px;
+    }
   }
   p {
     font-family: @df-serif;
@@ -57,6 +72,10 @@ table {
     cursor: pointer;
     padding: 5px 10px;
     padding-left: 16px;
+
+    @media (max-width: 1150px) {
+      font-size: 12px;
+    }
 
     &:hover {
       background: @df-light-gray;
@@ -85,20 +104,56 @@ table {
   tr {
     border-bottom: 1px solid @df-border-gray;
 
+    @media (max-width: 1150px) {
+      font-size: 12px;
+    }
+
     td {
       padding: 2px 10px;
+
+      @media (max-width: 1150px) {
+         padding: 1px 5px;
+      }
     }
   }
 
   .rank {
-    text-align: center;
+    text-align: right;
+    cursor: pointer;
+    
+    .fa-caret-down {
+      color: @df-maroon;
+    }
+    .fa-caret-up {
+      color: @df-blue;
+    }
+    span {
+      padding-left: 2px;
+    }
+    &:hover {
+      .tooltip {
+        display: block;
+      }
+    }
+    .tooltip {
+      display: none;
+      position: absolute;
+      background: @df-off-white;
+      padding: 3px 5px;
+      font-size: 14px;
+      border: @df-light-gray;
+    }
   }
-  .name {
+  .company {
     text-align: left;
   }
   .symbol {
     font-size: 12px;
     color: @df-middle-gray;
+
+    @media (max-width: 1150px) {
+      font-size: 11px;
+    }
   }
   .industry {
     text-align: center;
@@ -124,6 +179,22 @@ table {
 
   img {
     width: 30px;
+
+    @media (max-width: 1150px) {
+      width: 20px;
+    }
+  }
+
+  @media @tablet {
+    .profits, .profitlossperc, .roa, .employees, .peyoy {
+      display: none;
+    }
+  }
+
+  @media @mobile {
+    .industry {
+      display: none;
+    }
   }
 }
 

@@ -123,28 +123,44 @@
 
         <table>
           <thead>
-            <th ng-repeat="header in headers" ng-click="sortTable(header)" ng-class="{left: header.short == 'company', up: lastSort == header && sortOrder == -1, down: lastSort == header && sortOrder == 1}">
+            <th ng-repeat="header in headers" ng-click="sortTable(header)" class="{{header.short}}" ng-class="{left: header.short == 'company', up: lastSort == header && sortOrder == -1, down: lastSort == header && sortOrder == 1}">
               {{header.title}}
             </th>
           </thead>
 
           <tr ng-repeat="company in companies | filter:industryFilter">
             <td class="rank">{{company.rank}}
-            <td class="name">
+              <span ng-if="company.rank - company.prev > 0">
+                <i class="fa fa-caret-down"></i>
+                <div class="tooltip">Previous rank: {{company.prev}}</div>
+              </span>
+              <span ng-if="company.rank - company.prev < 0">
+                <i class="fa fa-caret-up"></i>
+                <div class="tooltip">Previous rank: {{company.prev}}</div>
+              </span>
+              <span ng-if="company.prev == company.rank">
+                &ndash;
+                <div class="tooltip">Previous rank: {{company.prev}}</div>
+              </span>
+              <span ng-if="company.prev == 'NR'">
+                &ndash;
+                <div class="tooltip">Previous rank: N/A</div>
+              </span>
+            <td class="company">
               {{company.company}}
               <div class="symbol">{{company.symbol}}</div>
             <td class="industry">
               <img src="./assets/icon_{{company.icon}}.jpg">
               <div class="tooltip">{{company.industry}}</div>
-            <td>{{company.roic}}
-            <td>{{company.marketcap}}
-            <td>{{company.freecashflow}}
-            <td>{{company.sales}}
-            <td>{{company.profits}}
-            <td>{{company.profitlossperc}}
-            <td>{{company.roa}}
-            <td>{{company.employees}}
-            <td>{{company.peyoy}}
+            <td class="roic">{{company.roic}}
+            <td class="marketcap">{{company.marketcap}}
+            <td class="freecashflow">{{company.freecashflow}}
+            <td class="sales">{{company.sales}}
+            <td class="profits">{{company.profits}}
+            <td class="profitlossperc">{{company.profitlossperc}}
+            <td class="roa">{{company.roa}}
+            <td class="employees">{{company.employees}}
+            <td class="peyoy">{{company.peyoy}}
           </tr>
         </table>
 
