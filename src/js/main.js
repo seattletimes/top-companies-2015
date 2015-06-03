@@ -28,6 +28,34 @@ app.filter("illions", ["$filter", function($filter){
   }
 }]);
 
+app.directive("sticky", function(){
+
+  var stuck = [];
+
+  var check = function() {
+    stuck.forEach(function(element) {
+      element.classList.remove("fixed");
+      var bounds = element.getBoundingClientRect();
+      if (bounds.top < 0) {
+        element.classList.add("fixed");
+      }
+    });
+  };
+
+  ["scroll", "resize"].forEach(function(event) {
+    window.addEventListener(event, check);
+  });
+
+  return {
+    restrict: "A",
+    link: function(scope, element, attributes) {
+      element = element[0];
+      stuck.push(element);
+    }
+  }
+
+});
+
 app.controller("CompanyController", ["$scope", function($scope) {
   $scope.companies = companyData;
   $scope.industries = ["Banking", "Biotechnology/biomed.", "Business services", "Communications/media", "Computer hardware", "Computer software/srvcs.", "Consumer products", "Forest products", "Insurance", "Manufacturing", "Mining", "Retail", "Semiconductors & equip.", "Telecommunications", "Travel & transportation", "Utilities"].sort();

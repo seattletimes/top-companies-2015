@@ -84,6 +84,7 @@
             </a>
           </div>
           <div class="credit">
+            <div class="caption"><%= company.caption %></div>
             Photo by <%= company.photographer %> / <%= company.publication %>
           </div>
         </div>
@@ -120,10 +121,11 @@
         </div>
 
         <table>
-          <thead>
-            <th ng-repeat="header in headers" ng-click="sortTable(header)" class="{{header.short}}" ng-class="{left: header.short == 'company', up: lastSort == header && sortOrder == -1, down: lastSort == header && sortOrder == 1}">
-              {{header.title}}
-            </th>
+          <thead sticky>
+            <tr>
+              <th ng-repeat="header in headers" ng-click="sortTable(header)" class="{{header.short}}" ng-class="{left: header.short == 'company', up: lastSort == header && sortOrder == -1, down: lastSort == header && sortOrder == 1}">
+                {{header.title}}
+              </th>
           </thead>
 
           <tr ng-repeat="company in companies | filter:industryFilter">

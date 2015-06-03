@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+@import "flexbox";
 @import "seattletimes";
 @import "page";
 @import "scroll";
@@ -21,6 +22,23 @@
 body {
   font-family: @df-sans;
   font-size: 16px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 999;
+  max-width: 1200px;
+  width: 100%;
+
+  @media (max-width: 1150px) {
+    width: calc(~"100%-80px");
+  }
+
+  @media @tablet {
+    width: calc(~"100%-20px");
+  }
 }
 
 .chart {
@@ -43,14 +61,15 @@ body {
     }
   }
   .inner {
-    padding: 20px 80px;
+    margin: 20px 80px;
+    max-width: 1200px;
 
     @media (max-width: 1150px) {
-      padding: 20px 40px;
+      margin: 20px 40px;
     }
 
     @media @tablet {
-      padding: 15px 10px;
+      margin: 15px 10px;
     }
   }
   p {
@@ -65,10 +84,15 @@ table {
   border-collapse: collapse;
   text-align: right;
   margin-top: 15px;
+  display: block;
+
+  thead, tbody {
+    display: block;
+  }
 
   th {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     cursor: pointer;
     padding: 5px 10px;
     padding-left: 16px;
@@ -101,8 +125,14 @@ table {
     }
   }
 
+  thead tr {
+    .align-items(flex-end);
+  }
+
   tr {
     border-bottom: 1px solid @df-border-gray;
+    .display-flex;
+    .align-items(center);
 
     @media (max-width: 1150px) {
       font-size: 12px;
@@ -115,12 +145,18 @@ table {
          padding: 1px 5px;
       }
     }
+
+    td, th {
+      display: block;
+      float: left;
+      .flex(1 1 200px);
+    }
   }
 
   .rank {
     text-align: right;
     cursor: pointer;
-    
+
     .fa-caret-down {
       color: @df-maroon;
     }
@@ -146,6 +182,7 @@ table {
   }
   .company {
     text-align: left;
+    .flex(2 1 400px);
   }
   .symbol {
     font-size: 12px;

@@ -15,7 +15,8 @@
     "image": "BestNW_Expedia.jpg",
     "overlay": "right",
     "photographer": "Ellen M. Banner",
-    "publication": "The Seattle Times"
+    "publication": "The Seattle Times",
+    "caption": "A plane lands at SeaTac International Airport."
   },
   {
     "title": "4",
@@ -33,7 +34,8 @@
     "image": "BestNW_F5.jpg",
     "overlay": "right",
     "photographer": "Ellen M. Banner",
-    "publication": "The Seattle Times"
+    "publication": "The Seattle Times",
+    "caption": "The data center at F5's Seattle headquarters."
   },
   {
     "title": "3",
@@ -51,7 +53,8 @@
     "image": "BestNW_MicronDurkin.jpg",
     "overlay": "right",
     "photographer": "Chris Butler",
-    "publication": "The Idaho Statesman"
+    "publication": "The Idaho Statesman",
+    "caption": "CEO Mark Durcan at company headquarters."
   },
   {
     "title": "2",
@@ -69,7 +72,8 @@
     "image": "BestNW_Symetra.jpg",
     "overlay": "left",
     "photographer": "Ellen M. Banner",
-    "publication": "The Seattle Times"
+    "publication": "The Seattle Times",
+    "caption": "Symetra's headquarters in downtown Bellevue."
   },
   {
     "title": "1",
@@ -87,6 +91,7 @@
     "image": "BestNW_Microsoft_Aerial.jpg",
     "overlay": "right",
     "photographer": "Ellen M. Banner",
-    "publication": "The Seattle Times"
+    "publication": "The Seattle Times",
+    "caption": "Aerial shot of the Microsoft campus in Redmond."
   }
 ]
