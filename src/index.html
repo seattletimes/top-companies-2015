@@ -26,7 +26,12 @@
           <h1>TOP NORTHWEST COMPANIES 2015</h1>
 
           <p>
-            1st 2nd 3d 4th 5th Chart
+            <a href="#top-1">1st</a>
+            <a href="#top-1">2nd</a>
+            <a href="#top-1">3rd</a>
+            <a href="#top-1">4th</a>
+            <a href="#top-1">5th</a>
+            <a href="#chart">Chart</a>
             <a class="share"></a>
           </p>
 
@@ -38,7 +43,7 @@
       </header>
 
       <% json.BestOfTheNW2015_Top5.sort(function(a, b) { return a.rank - b.rank }).forEach(function(company, i) { %>
-        <section class="parallax-play" data-index="<%= i %>">
+        <section id="<%= 'top-' + (i + 1) %>" class="parallax-play" data-index="<%= i %>">
         <img src="assets/<%= company.image %>" class="fixable">
         <div class="description <%= company.overlay %>">
           <h3 class="rank"><%= company.rank %> -- <%= company.company %></h3>
@@ -105,7 +110,8 @@
     <!-- ####################### -->
 
 
-    <div class="chart" ng-controller="CompanyController" ng-cloak>
+    <div id="chart" class="chart" ng-controller="CompanyController" ng-cloak>
+      <div class="ad"><%= t.include("partials/_ad.html", {type: "bannerBottom"}) %></div>
       <div class="hed">How Northwest companies compare</div>
       
       <div class="inner">
