@@ -14,6 +14,20 @@ new Share(".share-bottom", {
 
 var app = angular.module("top-companies", []);
 
+app.filter("illions", ["$filter", function($filter){
+  var format = $filter("number");
+  return function(number) {
+    var display;
+    if (number > 999) {
+      display = format(number/1000, 1) + " B";
+    } else {
+      display = number + " M";
+    }
+    display = "$" + display;
+    return display.replace(/\$\-/, "-$");
+  }
+}]);
+
 app.controller("CompanyController", ["$scope", function($scope) {
   $scope.companies = companyData;
   $scope.industries = ["Banking", "Biotechnology/biomed.", "Business services", "Communications/media", "Computer hardware", "Computer software/srvcs.", "Consumer products", "Forest products", "Insurance", "Manufacturing", "Mining", "Retail", "Semiconductors & equip.", "Telecommunications", "Travel & transportation", "Utilities"].sort();

@@ -44,21 +44,24 @@
           <h3 class="rank"><%= company.rank %> -- <%= company.company %></h3>
 
           <div class="copy">
-            <p class="chatter"><%= company.chatter %></p>
-
+            <div>
+              <h2>CEO</h2>
+              <p><%= company.ceo %>
+            </div>
             <div>
               <h2>Headquarters</h2>
               <p><%= company.headquarters %>
             </div>
             
-            <div>
-              <h2>CEO</h2>
-              <p><%= company.ceo %>
-            </div>
-            
-            <div>
-              <h2>Employees in 2014</h2>
-              <p><%= company.employees %>
+            <div class="sidebyside">
+              <div>
+                <h2>Cash flow, 2014</h2>
+                <p><%= company.cashflow %>
+              </div>
+              <div>
+                <h2>Sales, 2014</h2>
+                <p><%= company.sales %>
+              </div>
             </div>
 
             <div>
@@ -68,17 +71,12 @@
 
             <div>
               <h2>What sets it apart</h2>
-              <p><%= company.setsapart %>
-            </div>
-
-            <div>
-              <h2>2014 Cash flow</h2>
-              <p><%= company.cashflow %>
+              <p><%= company.chatter %> <%= company.setsapart %>
             </div>
             
             <div>
-              <h2>2014 Sales</h2>
-              <p><%= company.sales %>
+              <h2>Employees in 2014</h2>
+              <p><%= company.employees %>
             </div>
 
             <a class="read-more" href="<%= company.story %>">
@@ -152,14 +150,16 @@
             <td class="industry">
               <img src="./assets/icon_{{company.icon}}.jpg">
               <div class="tooltip">{{company.industry}}</div>
-            <td class="roic">{{company.roic}}
-            <td class="marketcap">{{company.marketcap}}
-            <td class="freecashflow">{{company.freecashflow}}
-            <td class="sales">{{company.sales}}
-            <td class="profits">{{company.profits}}
-            <td class="profitlossperc">{{company.profitlossperc}}
-            <td class="roa">{{company.roa}}
-            <td class="employees">{{company.employees}}
+            <td class="roic">{{company.roic}}%
+            <td class="marketcap">{{company.marketcap | illions}}
+            <td class="freecashflow">{{company.freecashflow | illions}}
+            <td class="sales">{{company.sales | illions}}
+            <td class="profits">{{company.profits | illions}}
+            <td class="profitlossperc">
+              <span ng-if="company.profitlossperc == 'NM'">NM</span>
+              <span ng-if="company.profitlossperc !== 'NM'">{{company.profitlossperc | number}}%</span>
+            <td class="roa">{{company.roa}}%
+            <td class="employees">{{company.employees | number}}
             <td class="peyoy">{{company.peyoy}}
           </tr>
         </table>
