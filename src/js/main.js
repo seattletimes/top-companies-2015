@@ -3,6 +3,15 @@ require("./lib/social");
 require("./lib/ads");
 require("angular");
 
+var Share = require("share");
+
+new Share(".share");
+new Share(".share-bottom", {
+  ui: {
+    flyout: "top left"
+  }
+});
+
 var app = angular.module("top-companies", []);
 
 app.controller("CompanyController", ["$scope", function($scope) {

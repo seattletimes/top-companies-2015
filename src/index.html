@@ -107,11 +107,11 @@
 
 
     <div class="chart" ng-controller="CompanyController" ng-cloak>
-      <div class="hed">Chart title goes here</div>
+      <div class="hed">How Northwest companies compare</div>
       
       <div class="inner">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper, magna in accumsan hendrerit, lorem lectus pulvinar sem, non lobortis nisl mauris vitae velit. Integer ac nisl mauris. Nullam cursus est a libero maximus condimentum. Sed sit amet odio et mi venenatis eleifend eget vel lacus.
-        <p>TO USE THE CHART: Quisque urna ligula, porta nec volutpat id, varius a lectus. Cras ultricies elementum scelerisque. Donec neque orci, euismod non congue in, tincidunt ac lorem. Ut mi arcu, dignissim id molestie commodo, iaculis ut sem.
+        <p>No single yardstick would be a fair gauge to rank the Northwest's publicly traded companies. We picked five measures of corporate performance — return on invested capital, free cash-flow yield, stock-price appreciation, revenue growth and dividend yield — then combined them into a single ranking using our proprietary formula. Read more about our methodology.
+        <p><strong>TO USE THE CHART:</strong> Click on a column to sort the chart, or filter by industry. The last column graphs the last five years of data for each company; you can select more options to graph from the dropdown menu. All columns are for fiscal year 2014, except where otherwise noted. Stock prices are year-end (Dec. 31). Cells marked "NM" are "not meaningful."
 
         <div>
           <label class="filter">Filter by industry:</label>
@@ -149,12 +149,12 @@
         </table>
 
         <div class="credits">
-          <div><strong>Reporter:</strong> Jon Talton
-          <div><strong>Editor:</strong> Becky Bisbee
-          <div><strong>Photographer:</strong> tktktk
-          <div><strong>Web designer:</strong> tktktk
-          <div><strong>Web developer:</strong> Audrey Carlsen
-          <div><strong>Data sources:</strong> tktktk
+          <div><strong>Reporter:</strong> Jon Talton</div>
+          <div><strong>Editor:</strong> Becky Bisbee</div>
+          <div><strong>Photographer:</strong> tktktk</div>
+          <div><strong>Web designer:</strong> tktktk</div>
+          <div><strong>Web developer:</strong> Audrey Carlsen</div>
+          <div><strong>Data sources:</strong> tktktk</div>
         </div>
       </div>
 
@@ -165,6 +165,7 @@
         <a class="share-bottom"></a>
       </footer>
     </div>
+
 
     <script>
       var companyData = <%= JSON.stringify(csv.big_chart) %>
