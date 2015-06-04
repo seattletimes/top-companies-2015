@@ -55,7 +55,7 @@ app.directive("sticky", function(){
 });
 
 var render = function(canvas, data, position) {
-console.log(data)
+
     var context = canvas.getContext("2d");
     var years = ["year-2010", "year-2011", "year-2012", "year-2013", "year-2014"];
     var values = [];

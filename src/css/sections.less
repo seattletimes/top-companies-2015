@@ -17,7 +17,7 @@
     color: white;
     box-shadow: 8px 8px 16px rgba(0,0,0,.3);
     border-radius: 5px;
-    padding: 40px 20px 20px 20px;
+    padding: 30px;
 
     @media @mobile {
       margin: 40px 20px 0;
@@ -26,27 +26,35 @@
 
     h3.rank {
       margin-top: 0;
-      font-family: 'Oswald', sans-serif;
-      font-size: 28px;
-      letter-spacing: .8px;
+      text-align: center;
+      font-family: @df-serif;
       color: @df-off-white;
+      margin-bottom: 20px;
 
       .circle {
-        background: @df-blue;
+        background: #ffa500;
         display: inline-block;
         border-radius: 50%;
-        width: 45px;
-        height: 45px;
+        width: 110px;
+        height: 110px;
         margin-right: 5px;
+        font-size: 90px;
 
         div {
-          margin-top: 10px;
+          margin-top: 48px;
           text-align: center;
         }
 
         .number {
-          color: @df-charcoal;
+          color: @df-off-white;
         }
+      }
+
+      .name {
+        margin-top: 10px;
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 45px;
       }
     }
 
@@ -69,20 +77,38 @@
     }
 
     h2 {
-      color: @df-orange;
-      font-size: 14px;
+      color: #d3d3d3;
+      font-size: 20px;
       font-family: @body;
       font-weight: 600;
       margin: 0 0 8px 0;
-      text-transform: uppercase;
       display: inline;
       padding-right: 5px;
     }
 
     p {
+      font-family: @body;
       margin-top: 0;
-      font-size: 14px;
+      font-size: 18px;
       display: inline;
+    }
+
+    .chunk {
+      padding-bottom: 20px;
+    }
+
+    .sidebyside {
+      .wrapper {
+        display: inline-block;
+
+        &.sales {
+          float: right;
+        }
+      }
+      h2, p {
+        display: block;
+        margin: 0;
+      }
     }
 
     blockquote {
@@ -113,7 +139,7 @@
       font-size: 11px;
       color: @df-middle-gray;
       text-align: right;
-      padding: 10px 20px 10px 20px;
+      padding-top: 10px;
       font-family: @df-sans;
 
       .caption {
