@@ -27,9 +27,27 @@
     h3.rank {
       margin-top: 0;
       font-family: 'Oswald', sans-serif;
-      font-size: 26px;
+      font-size: 28px;
       letter-spacing: .8px;
       color: @df-off-white;
+
+      .circle {
+        background: @df-blue;
+        display: inline-block;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        margin-right: 5px;
+
+        div {
+          margin-top: 10px;
+          text-align: center;
+        }
+
+        .number {
+          color: @df-charcoal;
+        }
+      }
     }
 
     h1 {
