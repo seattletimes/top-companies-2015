@@ -15,6 +15,7 @@
 
     <main class="scroll">
       <header class="intro">
+        <div class="ad top"><%= t.include("partials/_ad.html", {type: "banner"}) %></div>
         <nav class="logo-bar">
           <a class="logo" href="http://seattletimes.com">
             <img src="./assets/st-logo.png">
@@ -23,7 +24,9 @@
 
         <div class="contents">
 
-          <h1>TOP NORTHWEST COMPANIES 2015</h1>
+          <h1>BEST OF THE NORTHWEST</h1>
+
+          <p class="chatter">An investor's guide to publicly traded companies based in Washington, Idaho and Oregon and 24th annual ranking for performance in 2014. <a class="share"></a></p>
 
           <p>
             <a class="jump" href="#top-1">1st</a>
@@ -33,7 +36,6 @@
             <a class="jump" href="#top-5">5th</a>
             <br>
             <a class="jump break" href="#chart">Complete Sortable List</a>
-            <a class="share"></a>
           </p>
 
           <p class="instructions">
@@ -113,7 +115,7 @@
 
 
     <div id="chart" class="chart" ng-controller="CompanyController" ng-cloak>
-      <div class="ad"><%= t.include("partials/_ad.html", {type: "bannerBottom"}) %></div>
+      <div class="ad bottom"><%= t.include("partials/_ad.html", {type: "bannerBottom"}) %></div>
       <div class="hed">How Northwest companies compare</div>
       
       <div class="inner">
