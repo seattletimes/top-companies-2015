@@ -11,6 +11,11 @@ new Share(".share-bottom", {
     flyout: "top left"
   }
 });
+new Share(".share-right", {
+  ui: {
+    flyout: "top left"
+  }
+});
 
 var app = angular.module("top-companies", []);
 

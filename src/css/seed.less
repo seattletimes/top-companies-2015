@@ -37,7 +37,7 @@ body {
   max-width: 1200px;
   width: 100%;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1360px) {
     width: calc(~"100% - 160px");
   }
 
@@ -161,7 +161,7 @@ table {
     .display-flex;
     .align-items(center);
 
-    @media (max-width: 1350px) {
+    @media (max-width: 1360px) {
       font-size: 12px;
     }
 
@@ -169,7 +169,7 @@ table {
       padding: 2px 10px;
       font-size: 14px;
 
-      @media (max-width: 1350px) {
+      @media (max-width: 1360px) {
          padding: 1px 5px;
       }
 
@@ -234,7 +234,7 @@ table {
     font-size: 12px;
     color: @df-middle-gray;
 
-    @media (max-width: 1350px) {
+    @media (max-width: 1360px) {
       font-size: 11px;
     }
     @media (max-width: 700px) {
@@ -335,12 +335,15 @@ table {
   }
 }
 
-.share {
+.share-right {
   label {
     background: @df-light-gray !important;
   }
-  &.chart-share {
-    display: inline-block !important;
-    float: right;
-  }
+
+  display: inline-block !important;
+  float: right;
+
+  @media @tablet {
+    display: none !important;
+  } 
 }

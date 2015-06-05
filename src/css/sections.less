@@ -77,13 +77,13 @@
     }
 
     h2 {
-      color: #d3d3d3;
       font-size: 20px;
-      font-family: "Helvetica Neue";
-      font-weight: 600;
+      font-family: @df-serif;
       margin: 0 0 8px 0;
       display: inline;
       padding-right: 5px;
+      color: @df-off-white;
+      text-transform: uppercase;
     }
 
     p {
@@ -92,24 +92,11 @@
       margin-top: 0;
       font-size: 18px;
       display: inline;
+      color: #d3d3d3;
     }
 
     .chunk {
       padding-bottom: 20px;
-    }
-
-    .sidebyside {
-      .wrapper {
-        display: inline-block;
-
-        &.sales {
-          float: right;
-        }
-      }
-      h2, p {
-        display: block;
-        margin: 0;
-      }
     }
 
     blockquote {
