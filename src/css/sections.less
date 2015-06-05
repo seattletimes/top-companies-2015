@@ -46,7 +46,7 @@
         }
 
         .number {
-          color: @df-off-white;
+          color: @df-charcoal;
         }
       }
 
@@ -79,7 +79,7 @@
     h2 {
       color: #d3d3d3;
       font-size: 20px;
-      font-family: @body;
+      font-family: "Helvetica Neue";
       font-weight: 600;
       margin: 0 0 8px 0;
       display: inline;
@@ -87,7 +87,8 @@
     }
 
     p {
-      font-family: @body;
+      font-family: "Helvetica Neue";
+      font-weight: 200;
       margin-top: 0;
       font-size: 18px;
       display: inline;
@@ -128,10 +129,22 @@
 
     .read-more {
       display: block;
-      font-size: 12px;
+      padding: 7px 10px 5px 10px;
+      background: #ffa500;
+      font-size: 14px;
       text-transform: uppercase;
-      margin-top: 10px;
       font-family: @df-sans;
+      color: @df-charcoal;
+      transition: background .15s ease-in-out;
+      border-radius: 2px;
+      width: 100%;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 5px;
+
+      &:hover {
+        background: @df-orange;
+      }
     }
 
     .credit {
