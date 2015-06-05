@@ -24,6 +24,11 @@ body {
   font-size: 16px;
 }
 
+.spark-tooltip {
+  position: absolute;
+  z-index: 999;
+}
+
 .fixed {
   position: fixed;
   top: 0;
@@ -47,7 +52,7 @@ body {
   width: 100%;
 
   .hed {
-    font-family: Oswald;
+    font-family: @df-serif;
     font-size: 28px;
     background: @df-charcoal;
     color: @df-off-white;
@@ -73,7 +78,7 @@ body {
     }
   }
   p {
-    font-family: @df-serif;
+    font-family: @df-sans;
   }
   .filter {
     padding-right: 3px;
@@ -140,6 +145,7 @@ table {
 
     td {
       padding: 2px 10px;
+      font-size: 14px;
 
       @media (max-width: 1150px) {
          padding: 1px 5px;
@@ -149,13 +155,14 @@ table {
     td, th {
       display: block;
       float: left;
-      .flex(1 1 200px);
+      .flex(1 1 170px);
     }
   }
 
   .rank {
     text-align: right;
     cursor: pointer;
+    .flex(1 1 130px);
 
     .fa-caret-down {
       color: @df-maroon;
@@ -180,9 +187,22 @@ table {
       border: @df-light-gray;
     }
   }
+  .spark {
+    .flex(2 1 400px);
+    text-align: center;
+  }
+  .roic {
+    .flex(1 1 170px);
+  }
+  .freecashflow {
+    .flex(1 1 200px);
+  }
   .company {
     text-align: left;
     .flex(2 1 400px);
+  }
+  td.company {
+    font-size: 15px;
   }
   .symbol {
     font-size: 12px;
@@ -232,6 +252,19 @@ table {
     .industry {
       display: none;
     }
+  }
+}
+
+.spark-tooltip {
+  display: none;
+  position: absolute;
+  background: @df-off-white;
+  padding: 3px 5px;
+  font-size: 14px;
+  border: @df-light-gray;
+
+  &.show {
+    display: block;
   }
 }
 

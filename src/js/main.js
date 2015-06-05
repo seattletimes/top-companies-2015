@@ -55,7 +55,6 @@ app.directive("sticky", function(){
 });
 
 var render = function(canvas, data, position) {
-
     var context = canvas.getContext("2d");
     var years = ["year-2010", "year-2011", "year-2012", "year-2013", "year-2014"];
     var values = [];
@@ -64,7 +63,7 @@ var render = function(canvas, data, position) {
       if (value) values.push(value);
       return {
         value: value,
-        year: year
+        year: year.replace("year-", "")
       }
     });
     var penDown = false;
@@ -113,6 +112,7 @@ app.directive("sparkLine", function() {
 
       var data = scope.data;
       var canvas = element.find("canvas")[0];
+      console.log(data)
       render(canvas, data);
 
 
@@ -131,19 +131,24 @@ app.directive("sparkLine", function() {
             y: e.clientY - bounds.top
           };
         }
-        var item = render(canvas, data, dataKey, position);
-        var valueText = scope.formatColumn(dataKey, item.value);
-
-        var columnText = scope.$eval(['"', dataKey, '"|strings'].join("")) + "<br>";
-        tooltip.show(columnText + item.year + ": " + valueText, { top: e.pageY + 20, left: e.pageX + 10 });
-
+        var item = render(canvas, data, position);
+        var tooltip = document.querySelector(".spark-tooltip");
+        tooltip.classList.add("show");
+        tooltip.style.top = e.pageY + 20 + "px";
+        tooltip.style.left = e.pageX + 10 + "px";
+        if (item.value == "") {
+          item.value = "N/A"
+        } else {
+          item.value = "$" + item.value;
+        }
+        tooltip.innerHTML = item.year + ": " + item.value;
       };
 
       element.on("mousemove", onmove);
       element.on("click", onmove);
       element.on("mouseout", function(e) {
-        render(canvas, data, dataKey);
-        tooltip.hide();
+        render(canvas, data);
+        tooltip.classList.remove("show");
       });
     }
   }
@@ -172,7 +177,8 @@ app.controller("CompanyController", ["$scope", function($scope) {
     { title: "Profit / Loss %", short: "profitlossperc" },
     { title: "ROA", short: "roa" },
     { title: "Employees", short: "employees" },
-    { title: "P-E (YOY)", short: "peyoy" }
+    { title: "P-E (YOY)", short: "peyoy" },
+    { title: "Stock Price", short: "spark" }
     ];
   $scope.lastSort = $scope.headers[0];
   $scope.sortOrder = 1;

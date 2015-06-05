@@ -48,7 +48,7 @@ rank,prev,company,industry,icon,symbol,roic,marketcap,freecashflow,sales,profits
 47,62,Schnitzer Steel,Manufacturing,manufacturing,SCHN,2.0,604,102.10,2543.60,5.90,NM,0.4,3371,30.7
 48,23,FEI ,Manufacturing,manufacturing,FEIC,9.8,3776,93.40,956.30,105.10,-17.1,7.4,2660,30.4
 49,9,Sound Financial,Banking,banking,SFBC,5.1,48,2.80,25.70,4.20,7.6,0.9,81,11.6
-50,NR,Zulily,Retail,retail,ZU ,2.3,2935,62.30,1200.10,14.90,15.4,3.5,2907,212.7
+50,NR,Zulily,Retail,retail,ZU,2.3,2935,62.30,1200.10,14.90,15.4,3.5,2907,212.7
 51,NR,Blount International,Manufacturing,manufacturing,BLT,3.7,867,44.60,944.80,36.60,655.5,4.5,4400,17.0
 52,NR,Tableau Software,Computer software/srvcs.,computer,DATA,0.8,5922,52.70,412.60,5.90,-17.0,1.0,1947,2119.0
 53,47,Washington Federal,Banking,banking,WAFD,3.6,2161,121.90,564.40,157.40,3.9,1.1,1909,14.1
