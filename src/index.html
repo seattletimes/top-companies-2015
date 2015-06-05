@@ -137,6 +137,7 @@
               <th ng-repeat="header in headers" ng-click="sortTable(header)" class="{{header.short}}" ng-class="{left: header.short == 'company', up: lastSort == header && sortOrder == -1, down: lastSort == header && sortOrder == 1}">
                 {{header.title}}
               </th>
+              <th class="spark">Stock Price</th>
           </thead>
 
           <tr ng-repeat="company in companies | filter:industryFilter">

@@ -112,9 +112,9 @@ app.directive("sparkLine", function() {
 
       var data = scope.data;
       var canvas = element.find("canvas")[0];
-      console.log(data)
       render(canvas, data);
-
+      
+      var tooltip = document.querySelector(".spark-tooltip");
 
       var onmove = function(e) {
         if (e.target.tagName.toLowerCase() != "canvas") return;
@@ -132,7 +132,6 @@ app.directive("sparkLine", function() {
           };
         }
         var item = render(canvas, data, position);
-        var tooltip = document.querySelector(".spark-tooltip");
         tooltip.classList.add("show");
         tooltip.style.top = e.pageY + 20 + "px";
         tooltip.style.left = e.pageX + 10 + "px";
@@ -177,8 +176,7 @@ app.controller("CompanyController", ["$scope", function($scope) {
     { title: "Profit / Loss %", short: "profitlossperc" },
     { title: "ROA", short: "roa" },
     { title: "Employees", short: "employees" },
-    { title: "P-E (YOY)", short: "peyoy" },
-    { title: "Stock Price", short: "spark" }
+    { title: "P-E (YOY)", short: "peyoy" }
     ];
   $scope.lastSort = $scope.headers[0];
   $scope.sortOrder = 1;
