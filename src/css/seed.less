@@ -37,12 +37,16 @@ body {
   max-width: 1200px;
   width: 100%;
 
+  @media (max-width: 1350px) {
+    width: calc(~"100% - 160px");
+  }
+
   @media (max-width: 1150px) {
-    width: calc(~"100%-80px");
+    width: calc(~"100% - 80px");
   }
 
   @media @tablet {
-    width: calc(~"100%-20px");
+    width: calc(~"100% - 20px");
   }
 }
 
@@ -111,7 +115,7 @@ table {
     }
 
     @media @mobile {
-      font-size: 10px;
+      font-size: 9px;
     }
 
     &:hover {
@@ -169,6 +173,10 @@ table {
       @media (max-width: 700px) {
         font-size: 12px;
       }
+
+      @media @mobile {
+        font-size: 10px;
+      }
     }
 
     td, th {
@@ -214,6 +222,9 @@ table {
     font-size: 15px;
     @media (max-width: 700px) {
       font-size: 12px;
+    }
+    @media @mobile {
+      font-size: 11px;
     }
   }
   .symbol {
