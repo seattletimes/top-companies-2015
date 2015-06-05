@@ -106,6 +106,14 @@ table {
       font-size: 12px;
     }
 
+    @media (max-width: 700px) {
+      font-size: 11px;
+    }
+
+    @media @mobile {
+      font-size: 10px;
+    }
+
     &:hover {
       background: @df-light-gray;
     }
@@ -146,7 +154,7 @@ table {
     .display-flex;
     .align-items(center);
 
-    @media (max-width: 1150px) {
+    @media (max-width: 1350px) {
       font-size: 12px;
     }
 
@@ -154,8 +162,12 @@ table {
       padding: 2px 10px;
       font-size: 14px;
 
-      @media (max-width: 1150px) {
+      @media (max-width: 1350px) {
          padding: 1px 5px;
+      }
+
+      @media (max-width: 700px) {
+        font-size: 12px;
       }
     }
 
@@ -200,13 +212,19 @@ table {
   }
   td.company {
     font-size: 15px;
+    @media (max-width: 700px) {
+      font-size: 12px;
+    }
   }
   .symbol {
     font-size: 12px;
     color: @df-middle-gray;
 
-    @media (max-width: 1150px) {
+    @media (max-width: 1350px) {
       font-size: 11px;
+    }
+    @media (max-width: 700px) {
+      font-size: 10px;
     }
   }
   .industry {
@@ -257,13 +275,19 @@ table {
   img {
     width: 30px;
 
-    @media (max-width: 1150px) {
+    @media (max-width: 1300px) {
       width: 20px;
     }
   }
 
-  @media @tablet {
+  @media (max-width: 1300px) {
     .profits, .profitlossperc, .roa, .employees, .peyoy {
+      display: none;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .spark {
       display: none;
     }
   }
@@ -290,7 +314,7 @@ table {
 
 .credits {
   padding: 30px 0;
-  font-family: Oswald, sans-serif;
+  font-family: @df-serif;
 
   div {
     padding-top: 5px;
