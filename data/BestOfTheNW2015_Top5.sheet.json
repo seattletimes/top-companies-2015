@@ -1,6 +1,7 @@
 [
   {
-    "title": "5",
+    "title": "expedia",
+    "short": "expedia",
     "rank": "5",
     "company": "Expedia",
     "chatter": "Expedia has grown into one of the largest online travel agencies in the world by returning to its technology roots.",
@@ -11,7 +12,7 @@
     "setsapart": "Bulked up to become the largest online travel company in the U.S., and the world’s second largest, by buying smaller competitors.",
     "cashflow": "$26.7 billion",
     "sales": "$5.8 billion",
-    "story": "http://www.seattletimes.com/business/barrett-beefs-up-staffers-for-a-host-of-companies/",
+    "story": "http://www.seattletimes.com/2015/06/expedia-boosts-ranking-with-tech-travelocity-partnership/",
     "image": "BestNW_Expedia.jpg",
     "overlay": "right",
     "photographer": "Ellen M. Banner",
@@ -19,7 +20,8 @@
     "caption": "A plane lands at SeaTac International Airport."
   },
   {
-    "title": "4",
+    "title": "f5",
+    "short": "f5",
     "rank": "4",
     "company": "F5 Networks",
     "chatter": "Despite changes in their industy and changes in their offerings, F5 Networks continues seeing steady growth.",
@@ -30,7 +32,7 @@
     "setsapart": "More than 50 percent market share in the application delivery controller market.",
     "cashflow": "$978.3 million",
     "sales": "$1.7 billion",
-    "story": "http://www.seattletimes.com/business/barrett-beefs-up-staffers-for-a-host-of-companies/",
+    "story": "http://www.seattletimes.com/2015/06/f5-networks-expands-into-online-security-services/",
     "image": "BestNW_F5.jpg",
     "overlay": "right",
     "photographer": "Ellen M. Banner",
@@ -38,7 +40,8 @@
     "caption": "The data center at F5's Seattle headquarters."
   },
   {
-    "title": "3",
+    "title": "micron",
+    "short": "micron",
     "rank": "3",
     "company": "Micron Technology",
     "chatter": "In acquiring a company amid a growing industry and diversifying demand, 2014 proved to be a successful year for memory giant Micron Technology.",
@@ -49,7 +52,7 @@
     "setsapart": "No. 1 broadest memory chip and drive portfolio in their industry, with over 20,000 patents.",
     "cashflow": "$3 billion",
     "sales": "$16.4 billion",
-    "story": "http://www.seattletimes.com/business/barrett-beefs-up-staffers-for-a-host-of-companies/",
+    "story": "http://www.seattletimes.com/2015/06/memory-giant-enjoys-year-of-large-growth/",
     "image": "BestNW_MicronDurkin.jpg",
     "overlay": "right",
     "photographer": "Chris Butler",
@@ -57,7 +60,8 @@
     "caption": "CEO Mark Durcan at company headquarters."
   },
   {
-    "title": "2",
+    "title": "symetra",
+    "short": "symetra",
     "rank": "2",
     "company": "Symetra Financial",
     "chatter": "Retirement investments represent half of Bellevue insurance company Symetra’s revenue.",
@@ -68,7 +72,7 @@
     "setsapart": "Intensely focused on building national brand awareness for key lines of business.",
     "cashflow": "$526.3 million",
     "sales": "$2.2 billion",
-    "story": "http://www.seattletimes.com/business/barrett-beefs-up-staffers-for-a-host-of-companies/",
+    "story": "http://www.seattletimes.com/2015/06/symetra-looks-to-grow-beyond-retirement-investment-sales/",
     "image": "BestNW_Symetra.jpg",
     "overlay": "left",
     "photographer": "Ellen M. Banner",
@@ -76,7 +80,8 @@
     "caption": "Symetra's headquarters in downtown Bellevue."
   },
   {
-    "title": "1",
+    "title": "microsoft",
+    "short": "microsoft",
     "rank": "1",
     "company": "Microsoft",
     "chatter": "",
