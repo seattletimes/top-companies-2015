@@ -5,7 +5,11 @@ require("angular");
 
 var Share = require("share");
 
-new Share(".share");
+new Share(".share", {
+  ui: {
+    flyout: "top left"
+  }
+});
 new Share(".share-bottom", {
   ui: {
     flyout: "top left"
