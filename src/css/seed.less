@@ -29,6 +29,29 @@ body {
   z-index: 999;
 }
 
+.to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  background: fade(@df-charcoal, 75%);
+  color: @df-off-white;
+  padding: 9px 12px 6px 12px;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+
+  .fa-chevron-up {
+    padding-right: 3px;
+    color: #ffa500;
+  }
+
+  &:hover {
+    background: fade(@df-charcoal, 100%);
+    color: @df-off-white;
+  }
+}
+
 .fixed {
   position: fixed;
   top: 0;
@@ -57,7 +80,7 @@ body {
 
   .hed {
     font-family: @df-serif;
-    font-size: 28px;
+    font-size: 34px;
     background: @df-charcoal;
     color: @df-off-white;
     padding: 20px 80px;
@@ -67,6 +90,9 @@ body {
     }
     @media @tablet {
       padding: 15px 10px;
+    }
+    @media @mobile {
+      font-size: 28px;
     }
   }
   .inner {
@@ -354,6 +380,9 @@ table {
   float: right;
 
   @media @tablet {
-    display: none !important;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: block !important;
+    float: none;
   } 
 }

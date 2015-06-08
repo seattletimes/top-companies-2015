@@ -17,7 +17,9 @@
     "overlay": "right",
     "photographer": "Ellen M. Banner",
     "publication": "The Seattle Times",
-    "caption": "A plane lands at SeaTac International Airport."
+    "caption": "A plane lands at SeaTac International Airport.",
+    "svg": "expediaCF.svg",
+    "illions": "millions"
   },
   {
     "title": "f5",
@@ -37,7 +39,9 @@
     "overlay": "right",
     "photographer": "Ellen M. Banner",
     "publication": "The Seattle Times",
-    "caption": "The data center at F5's Seattle headquarters."
+    "caption": "The data center at F5's Seattle headquarters.",
+    "svg": "F5NetCF.svg",
+    "illions": "millions"
   },
   {
     "title": "micron",
@@ -57,7 +61,9 @@
     "overlay": "right",
     "photographer": "Chris Butler",
     "publication": "The Idaho Statesman",
-    "caption": "CEO Mark Durcan at company headquarters."
+    "caption": "CEO Mark Durcan at company headquarters.",
+    "svg": "micronCF.svg",
+    "illions": "millions"
   },
   {
     "title": "symetra",
@@ -77,7 +83,9 @@
     "overlay": "left",
     "photographer": "Ellen M. Banner",
     "publication": "The Seattle Times",
-    "caption": "Symetra's headquarters in downtown Bellevue."
+    "caption": "Symetra's headquarters in downtown Bellevue.",
+    "svg": "SymetraCF.svg",
+    "illions": "millions"
   },
   {
     "title": "microsoft",
@@ -97,6 +105,8 @@
     "overlay": "right",
     "photographer": "Ellen M. Banner",
     "publication": "The Seattle Times",
-    "caption": "Aerial shot of the Microsoft campus in Redmond."
+    "caption": "Aerial shot of the Microsoft campus in Redmond.",
+    "svg": "microsoftCF.svg",
+    "illions": "billions"
   }
 ]
