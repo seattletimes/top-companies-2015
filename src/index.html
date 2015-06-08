@@ -88,9 +88,11 @@
               <p><%= company.employees %>
             </div>
 
-            <a class="read-more" href="<%= company.story %>">
-              Read story &rarr;</i>
-            </a>
+            <% if (company.company !== "Microsoft") { %>
+              <a class="read-more" href="<%= company.story %>">
+                Read story &rarr;</i>
+              </a>
+            <% }; %>
           </div>
           <div class="credit">
             <div class="caption"><%= company.caption %></div>
@@ -182,11 +184,11 @@
         </table>
 
         <div class="credits">
-          <div><strong>Reporters:</strong> Jason Axelrod and Coral Garnick</div>
+          <div><strong>Reporters:</strong> Jason Axelrod, Matt Day and Coral Garnick</div>
           <div><strong>Researcher:</strong> Sanjay Bhatt</div>
           <div><strong>Editor:</strong> Becky Bisbee</div>
           <div><strong>Developer:</strong> Audrey Carlsen</div>
-          <div><strong>Data sources:</strong> tktktk</div>
+          <div><strong>Data sources:</strong> Bloomberg and SEC documents</div>
         </div>
       </div>
 
