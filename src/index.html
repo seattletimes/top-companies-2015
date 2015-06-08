@@ -74,7 +74,7 @@
             <div class="chunk">
               <h2>Cash flow</h2>
               <p class="nowrap illions">In <%= company.illions %> of dollars</p>
-              <img src="./assets/<%=company.svg%>"></img>
+              <%= t.include("./assets/" + company.svg) %>
             </div>
 
             <div class="chunk">
