@@ -5,15 +5,15 @@
       "path": "fearful-marble"
     },
     "live": {
-      "bucket": "",
-      "path": ""
+      "bucket": "projects.seattletimes.com",
+      "path": "2015/top-companies"
     }
   },
-  "title": "",
+  "title": "Best of the Northwest",
   "description": "",
-  "url": "",
+  "url": "projects.seattletimes.com/2015/top-companies",
   "slug": "",
-  "tags": [],
+  "tags": ["business", "companies", "microsoft", "symetra", "f5", "micron", "expedia", "industry"],
   "production": false,
   "embedded": true
 }
