@@ -9,11 +9,11 @@
       "path": "2015/top-companies"
     }
   },
-  "title": "Best of the Northwest",
-  "description": "",
-  "url": "projects.seattletimes.com/2015/top-companies",
-  "slug": "",
+  "title": "Best of the Northwest 2015",
+  "description": "An investor's guide to publicly traded companies based in Washington, Idaho and Oregon.",
+  "url": "http://projects.seattletimes.com/2015/top-companies/",
+  "slug": "top-companies",
   "tags": ["business", "companies", "microsoft", "symetra", "f5", "micron", "expedia", "industry"],
-  "production": false,
-  "embedded": true
+  "production": true,
+  "embedded": false
 }

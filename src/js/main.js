@@ -12,7 +12,7 @@ new Share(".share", {
 });
 new Share(".share-bottom", {
   ui: {
-    flyout: "top left"
+    flyout: "top right"
   }
 });
 new Share(".share-right", {
