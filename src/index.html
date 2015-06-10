@@ -94,11 +94,9 @@
               <p class="nowrap"><%= company.employees %></p>
             </div>
 
-            <% if (company.company !== "Microsoft") { %>
-              <a class="read-more" href="<%= company.story %>">
-                Read story &rarr;</i>
-              </a>
-            <% }; %>
+            <a class="read-more" href="<%= company.story %>">
+              Read story &rarr;</i>
+            </a>
           </div>
           <div class="credit">
             <div class="caption"><%= company.caption %></div>
